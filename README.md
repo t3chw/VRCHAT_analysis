@@ -7,10 +7,10 @@ How long do people keep playing VRChat after they review it on Steam, who leaves
 | Notebook | Case study part | What it covers |
 |---|---|---|
 | `VRChat_1_who_stays.ipynb` | Part 1: Who stays | The data; three measurement decisions (inputs known when the clock starts, a departure confirmed by a year without play, the clock at the review's last edit); the Kaplan Meier curve; who keeps playing by playtime, thumbs and language; the July 2022 protest week |
-| `VRChat_2_who_leaves_sooner.ipynb` | Part 2: Who leaves sooner | The daily risk of leaving over time; the shift in 2024 and 2025; Cox models, a check of proportional hazards by time window, and one model per playtime band; tests on a held out half and on later years; expected retained days for six kinds of reviewer |
-| `VRChat_3_designing_a_test.ipynb` | Part 3: A fair test | A randomised test of help for new players at a negative review: who to test and when, sample sizes, how long it would take, a simulation check of the power, what success would be worth, and the protest wave rule |
+| `VRChat_2_who_leaves_sooner.ipynb` | Part 2: Who leaves sooner | The daily risk of leaving over time; the shift in 2024 and 2025; Cox models, a check of proportional hazards by time window, and one model per playtime band; tests on a held out half and on later years; expected retained days for six kinds of reviewer, with a bootstrap interval for the new player thumbs down gap |
+| `VRChat_3_designing_a_test.ipynb` | Part 3: A fair test | A randomised test of help for new players at a negative review: who to test and when, sample sizes, how long it would take, a simulation check of the power, what success would be worth (including players kept a month across the arrival rates seen), and the protest wave rule |
 
-Run them in order: notebook 1 saves the retention table that notebooks 2 and 3 read. Notebook 2's Cox fits take a few minutes; the others run in seconds.
+Run them in order: notebook 1 saves the retention table that notebooks 2 and 3 read. Notebook 2's Cox fits and the bootstrap at the end of section 5 take about seven minutes; the others run in seconds.
 
 ## Data
 
